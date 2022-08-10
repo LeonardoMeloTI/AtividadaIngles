@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AtividadeIngles</title>
+  </head>
+  <body>
+    <header>
+      <section class="container-header">
+        <div class="header-wrapper">
+          <input class="nav-input" type="checkbox" id="nav-toggle" />
+          <label class="nav-toggle-label" for="nav-toggle">
+            <span class="menu"></span>
+          </label>
+          <h1>flavo</h1>
+          <a href="#">
+            <figure>
+                <img src="imgs/header.png" alt="#"/>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="middle-container">
+        <div class="product">
+            <figure>
+                <img src="imgs/product.png" alt="#"/>
+            </figure>
+        </div>
+        <section class="text">
+          <h2>Passion</h2>
+          <h2>$15</h2>
+          <h3>What's Inside</h3>
+          <p>Chili, oregano, safra, paprika.</p>
+          <h3>Why we love it</h3>
+          <p>This one will add a little savoury
+            flavour to any food and turn any
+            meal to a culinary masterpiece.</p>
+          </section>
+        <section class="bag-checkbox">
+          <div class="checkbox-wrapper">
+            <input class="circle-checkbox" type="checkbox" id="bag-circle"/>
+            <label class="checkbox-label" for="bag-circle"></label>
+            <p>BAG (75g)</p>
+          </div>
+          <div class="checkbox-wrapper">
+            <input class="circle-checkbox" type="checkbox" id="jar-circle"/>
+            <label class="checkbox-label" for="jar-circle"></label>
+            <p>JAR (150g)</p>
+          </div>
+        </section>
+        <div class="btn-wrapper">
+          <button class="btn-less" onclick="less()">-</button>
+          <p class="number">1</p>
+          <button class="btn-add" onclick="add()">+</button>
+        </div>
+        <button class="box">Add to Cart</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

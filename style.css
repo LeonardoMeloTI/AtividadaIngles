@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: none;
+}
+header{
+    display: none;
+}
+@media (max-width:580px){
+    header{
+        display: initial;
+    }
+    main{
+        display: initial;
+    }
+
+    .container-header{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #f1b641; 
+    }
+    .header-wrapper{
+        width: 90%;
+        border-radius: 2em;
+        margin: 0 auto;
+        padding: 5px 30px;
+        background-color: #ffecc0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .header-wrapper h1{
+        font-size: 28px;
+        font-family: 'Courgette', cursive;
+        font-weight: 400;
+    }
+    .header-wrapper img{
+        width: 6vw;
+    }
+    .nav-input{
+        display: none;
+    }
+    .menu{
+        width: 1em;
+        height: 3px;
+        border-radius: 2px;
+        display: block;
+        background-color: #000000;
+        position: relative;
+    }
+    .menu::before{
+        width: 1em;
+        height: 3px;
+        border-radius: 2px;
+        display: block;
+        background-color: #000000;
+        position: relative;
+        
+    }
+    .menu::after{
+        width: 1em;
+        height: 3px;
+        border-radius: 2px;
+        display: block;
+        background-color: #000000;
+        position: relative;
+    }
+    .menu::before{
+        top: 5px;
+    }
+    .menu::after{
+        bottom: 5px;
+    }
+    .menu::before,
+    .menu::after{
+        content: '';
+        position: absolute;
+    }
+    .middle-container{
+        width: 100%;
+        background-color: #f1b641;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product{
+        width: 100%;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 80%;
+        gap: 1rem;
+    }
+    .product img{
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .text{
+        width: 100%;
+        padding: 0 1rem;
+        display: grid;
+        row-gap: .8rem;
+    }
+
+    .text h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .text h2:last-of-type{
+        text-align: right;
+    }
+
+    .text h3{
+        font-size: 30px;
+        font-family:'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .text p{
+        width: 30ch;
+        font-size: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        grid-column: 1 / span 2;
+    }
+    .bag-checkbox{
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 17px;
+        display: flex;
+        gap: 2rem;
+    }
+    .checkbox-wrapper{
+        display: flex;
+        position: relative;
+    }
+    .circle-checkbox{
+        display: none;
+    }
+    .checkbox-label{
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background: transparent;
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+    .circle-checkbox:checked + .checkbox-label{
+        background-color: #000000;;
+    }
+    .checkbox-label:checked + .circle-checkbox{
+        display: initial;
+    }
+    .checkbox-wrapper p{
+        font-size: 24px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        margin-left: 25px;
+        margin-bottom:10px;
+    }
+    .btn-wrapper{
+        width: 90%;
+        border-radius: 100px;
+        border: 1.5px solid #000000;
+        padding: 2px;
+        background-color:#ffecc0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .number{
+        font-size: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+    }
+    .btn-less{
+        font-size: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+         margin: 0 15px;
+         border: none;
+        cursor: pointer;
+    }
+    .btn-add{
+        font-size: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        margin: 0 15px;
+        border: none;
+        cursor: pointer;
+    }
+    .box{
+        width: 90%;
+        height: 40px;
+        border-radius: 100px;
+        font-size: 28px;
+        font-family:'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        margin: 30px 0 20px;
+        background-color: #000000;
+        color: #ffecc0;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+    .box:hover{
+        font-weight: 700;
+        background-color: #ffecc0;
+        color: #000000;
+    }
+}
